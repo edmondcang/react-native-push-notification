@@ -36,7 +36,7 @@ public class RNPushNotificationBootEventReceiver extends BroadcastReceiver {
                         if (notificationAttributes.getFireDate() < System.currentTimeMillis()) {
                             Log.i(LOG_TAG, "RNPushNotificationBootEventReceiver: Showing notification for " +
                                     notificationAttributes.getId());
-                            rnPushNotificationHelper.sendToNotificationCentre(notificationAttributes.toBundle());
+                            rnPushNotificationHelper.sendNotification(notificationAttributes.toBundle());
                         } else {
                             Log.i(LOG_TAG, "RNPushNotificationBootEventReceiver: Scheduling notification for " +
                                     notificationAttributes.getId());

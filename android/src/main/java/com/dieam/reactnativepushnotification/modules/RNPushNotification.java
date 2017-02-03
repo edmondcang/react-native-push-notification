@@ -122,7 +122,7 @@ public class RNPushNotification extends ReactContextBaseJavaModule implements Ac
         if (bundle.getString("id") == null) {
             bundle.putString("id", String.valueOf(mRandomNumberGenerator.nextInt()));
         }
-        mRNPushNotificationHelper.sendToNotificationCentre(bundle);
+        mRNPushNotificationHelper.sendNotification(bundle);
     }
 
     @ReactMethod

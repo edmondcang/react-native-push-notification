@@ -110,7 +110,7 @@ public class RNPushNotificationListenerService extends GcmListenerService {
         if (!isForeground) {
             Application applicationContext = (Application) context.getApplicationContext();
             RNPushNotificationHelper pushNotificationHelper = new RNPushNotificationHelper(applicationContext);
-            pushNotificationHelper.sendToNotificationCentre(bundle);
+            pushNotificationHelper.sendNotification(bundle);
         }
     }
 
