@@ -281,7 +281,7 @@ public class RNPushNotificationHelper {
                     new NotificationCompat.BigPictureStyle()
                             .bigPicture(image)
                             .setBigContentTitle( title )
-                            .setSummaryText( message )
+                            .setSummaryText( subText )
             );
         } else {
             notification.setContentText(message);
